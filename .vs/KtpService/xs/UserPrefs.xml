@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="KtpListener/KtpListener.cs">
+    <Files>
+      <File FileName="KonectSocket/Functions.cs" Line="259" Column="22" />
+      <File FileName="KonectSocket/KonectSocket.xml" Line="1" Column="1" />
+      <File FileName="KonectSocket/KtpClient.cs" Line="772" Column="21" />
+      <File FileName="KtpListener/KtpListener.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="KtpService" expanded="True">
+            <Node name="KonectSocket" expanded="True" />
+            <Node name="KtpListener" expanded="True">
+              <Node name="KtpListener.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

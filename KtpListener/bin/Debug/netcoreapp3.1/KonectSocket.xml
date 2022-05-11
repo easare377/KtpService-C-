@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KonectSocket</name>
+    </assembly>
+    <members>
+        <member name="T:KonectSocket.ConnectedEventArgs">
+            <summary>
+            Contains arguments associated with <see cref="E:KonectSocket.KtpClient.Connected"/> event.
+            </summary>
+        </member>
+        <member name="P:KonectSocket.ConnectedEventArgs.Error">
+            <summary>
+            Gets a value which indicates the error that occurs in a <see cref="T:KonectSocket.KtpClient"/> persistent connection.
+            </summary>
+        </member>
+        <member name="P:KonectSocket.ConnectedEventArgs.ConnectionState">
+            <summary>
+            Gets the current connection state of the <see cref="T:KonectSocket.KtpClient"/> connection.
+            </summary>
+        </member>
+        <member name="M:KonectSocket.ConnectedEventArgs.#ctor(System.Exception,KonectSocket.KtpClient.ConnectionState)">
+            <summary>
+            Initializes a new instance of <see cref="T:KonectSocket.ConnectedEventArgs"/>.
+            </summary>
+            <param name="exception">The <see cref="T:System.Exception"/> that occurs in a <see cref="T:KonectSocket.KtpClient"/> persistent connection.</param>
+            <param name="connectionState">The connection state of the <see cref="T:KonectSocket.KtpClient"/> persistent connection.</param>
+        </member>
+        <member name="M:KonectSocket.ConnectedEventArgs.#ctor(KonectSocket.KtpClient.ConnectionState)">
+            <summary>
+            Initializes a new instance of <see cref="T:KonectSocket.ConnectedEventArgs"/>.
+            </summary>
+            <param name="connectionState">The connection state of the <see cref="T:KonectSocket.KtpClient"/> persistent connection.</param>
+        </member>
+        <member name="M:KonectSocket.Functions.GetRequestContentLength(System.Net.Sockets.NetworkStream)">
+            <summary>
+            Asynchronously gets the size of the current message body.
+            </summary>
+            <param name="networkStream">The <see cref="T:System.Net.Sockets.NetworkStream"/> to read data from.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+            <exception cref="T:System.Net.Sockets.SocketException"></exception>
+            <exception cref="T:System.IO.InvalidDataException"></exception>
+            <exception cref="T:System.Threading.Tasks.TaskCanceledException"></exception>
+            <returns></returns>
+        </member>
+        <member name="M:KonectSocket.Functions.GetRequestContentLength(System.Net.Sockets.NetworkStream,System.Threading.CancellationToken)">
+            <summary>
+            Asynchronously gets the size of the current message body.
+            </summary>
+            <param name="networkStream">The <see cref="T:System.Net.Sockets.NetworkStream"/> to read data from.</param>
+            <param name="ct">The token to monitor for cancellation requests.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+            <exception cref="T:System.Net.Sockets.SocketException"></exception>
+            <exception cref="T:System.IO.InvalidDataException"></exception>
+            <exception cref="T:System.Threading.Tasks.TaskCanceledException"></exception>
+            <returns></returns>
+        </member>
+        <member name="M:KonectSocket.Functions.GetWriteData(System.Byte[])">
+            <summary>
+            Gets the <see cref="T:KonectSocket.KtpClient"/> formatted data to be sent to a <see cref="T:System.Net.Sockets.NetworkStream"/>.
+            </summary>
+            <param name="dataBuffer">The data to be formatted.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:KonectSocket.Functions.ReadTcpClientStreamAsync(System.Net.Sockets.TcpClient)">
+            <summary>
+            Reads all the available data from a <see cref="T:System.Net.Sockets.TcpClient"/>`s <see cref="T:System.Net.Sockets.NetworkStream"/>.
+            </summary>
+            <param name="tcpClient">The <see cref="T:System.Net.Sockets.TcpClient"/> to read the data from.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+            <exception cref="T:System.Net.Sockets.SocketException"></exception>
+            <returns></returns>
+        </member>
+        <member name="T:KonectSocket.KtpClient">
+            <summary>
+            Provides client connections for Ktp network services.
+            </summary>
+        </member>
+        <member name="P:KonectSocket.KtpClient.ConnectionData">
+            <summary>
+            Gets or Sets the data sent to the host when the <see cref="T:KonectSocket.KtpClient"/> connects or reconnects to a host. 
+            </summary>
+        </member>
+        <member name="P:KonectSocket.KtpClient.IsConnected">
+            <summary>
+            Gets a value indicating whether the <see cref="T:KonectSocket.KtpClient" /> is connected to a remote host.
+            </summary>
+            <returns>
+            <see langword="true" /> if the <see cref="T:KonectSocket.KtpClient" /> is connected to a remote host; otherwise, <see langword="false" />.
+            </returns>
+        </member>
+        <member name="P:KonectSocket.KtpClient.DataAvailable">
+            <summary>
+            Gets a value that indicates whether data is available on the <see cref="T:KonectSocket.KtpClient"/> to be read.
+            </summary>
+        </member>
+        <member name="P:KonectSocket.KtpClient.ReadTimeout">
+            <summary>
+            Gets or Sets the maximum amount of time for a read operation when it receives new data.
+            The default is 15 seconds.
+            </summary>
+        </member>
+        <member name="P:KonectSocket.KtpClient.WriteTimeout">
+            <summary>
+            Gets or Sets the maximum amount amount of time a write operation tries to write data.
+            The default is 15 seconds.
+            </summary>
+        </member>
+        <member name="P:KonectSocket.KtpClient.Client">
+            <summary>
+            Gets the underlying <see cref="T:System.Net.Sockets.TcpClient"/> of the <see cref="T:KonectSocket.KtpClient"/> connection.
+            </summary>
+        </member>
+        <member name="P:KonectSocket.KtpClient.RemoteEndPoint">
+            <summary>
+            Gets the remote endpoint.
+            </summary>
+            <exception cref="T:System.Net.Sockets.SocketException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+        </member>
+        <member name="P:KonectSocket.KtpClient.KeepAliveTimeout">
+            <summary>
+            Gets or Sets the maximum time to wait for a keep-alive message.
+            </summary>
+        </member>
+        <member name="M:KonectSocket.KtpClient.#ctor">
+            <summary>
+            Create a new instance of KtpClient.
+            </summary>
+        </member>
+        <member name="M:KonectSocket.KtpClient.#ctor(System.Net.Sockets.TcpClient)">
+            <summary>
+            Create a new instance of KtpClient.
+            </summary>
+            <param name="client"></param>
+        </member>
+        <member name="M:KonectSocket.KtpClient.ConnectAsync(System.String,System.UInt16)">
+            <summary>
+            Asynchronously connects the client to the specified host.
+            </summary>
+            <param name="host">The DNS or Ip Address of the remote host in which you intend to connect.</param>
+            <param name="port">The port of the remote host in which you intend to connect.</param>
+            <returns>Task</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:KonectSocket.KtpClient.KtpException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+        </member>
+        <member name="M:KonectSocket.KtpClient.ConnectAsync(System.String,System.UInt16,System.Threading.CancellationToken)">
+            <summary>
+            Asynchronously connects the client to the specified host.
+            </summary>
+            <param name="host">The DNS or Ip Address of the remote host in which you intend to connect.</param>
+            <param name="port">The port of the remote host in which you intend to connect.</param>
+            <param name="ct">The token to monitor for cancellation request.</param>
+            <returns>Task</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:KonectSocket.KtpClient.KtpException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+        </member>
+        <member name="M:KonectSocket.KtpClient.WriteAsync(System.Byte[])">
+            <summary>
+            Asynchronously writes a sequence of bytes to a network stream
+            </summary>
+            <param name="buffer">The object to write to the stream</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:KonectSocket.KtpClient.KtpException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:KonectSocket.KtpClient.WriteAsync(System.Byte[],System.Threading.CancellationToken)">
+            <summary>
+            Asynchronously writes a sequence of bytes to a network stream.
+            </summary>
+            <param name="buffer">The object to write to the stream</param>
+            <param name = "ct" >The token to monitor for cancellation request.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:KonectSocket.KtpClient.KtpException"></exception>
+            <exception cref="T:System.ObjectDisposedException"></exception>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:KonectSocket.KtpClient.SendDataAsync(System.Object)">
+            <summary>
+            Asynchronously writes an object to a network stream
+            </summary>
+             <param name="value">The object to write to the stream</param>
+             <exception cref="T:System.ArgumentNullException"></exception>
+             <exception cref="T:System.ArgumentException"></exception>
+             <exception cref="T:KonectSocket.KtpClient.KtpException"></exception>
+             <exception cref="T:System.ObjectDisposedException"></exception>
+             <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:KonectSocket.KtpClient.SendDataAsync(System.Object,System.Threading.CancellationToken)">
+            <summary>
+            Asynchronously writes an object to a network stream.
+            </summary>
+             <param name="value">The object to write to the stream.</param>
+             <param name="ct">The token to monitor for cancellation request.</param>
+             <exception cref="T:System.ArgumentNullException"></exception>
+             <exception cref="T:System.ArgumentException"></exception>
+             <exception cref="T:KonectSocket.KtpClient.KtpException"></exception>
+             <exception cref="T:System.ObjectDisposedException"></exception>
+             <exception cref="T:System.InvalidOperationException"></exception>
+             <exception cref="T:System.Threading.Tasks.TaskCanceledException"></exception>
+        </member>
+        <member name="M:KonectSocket.KtpClient.ReadAsync">
+            <summary>
+            Asynchronously reads a sequence of bytes from a <see cref="T:System.Net.Sockets.NetworkStream"/>.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KonectSocket.KtpClient.ReadAsync(System.Threading.CancellationToken)">
+            <summary>
+            Asynchronously reads a sequence of bytes from a <see cref="T:System.Net.Sockets.NetworkStream"/>.
+            </summary>
+            <param name="ct">The token to monitor for cancellation request.</param>
+            <returns></returns>
+        </member>
+        <member name="M:KonectSocket.KtpClient.ReceiveDataAsync``1(System.Threading.CancellationToken)">
+            <summary>
+            Asynchronously reads an object from a <see cref="T:System.Net.Sockets.NetworkStream"/>.
+            </summary>
+            <param name = "ct">The token to monitor for cancellation request.</param>
+            <returns>An object of specified Type</returns>
+             <exception cref="T:System.ArgumentNullException"></exception>
+             <exception cref="T:System.ObjectDisposedException"></exception>
+             <exception cref="T:System.InvalidOperationException"></exception>
+             <exception cref="T:System.Net.Sockets.SocketException"></exception>
+             <exception cref="T:System.Threading.Tasks.TaskCanceledException"></exception>
+        </member>
+        <member name="T:KonectSocket.KtpClient.ConnectionState">
+            <summary>
+            Indicates the state of the current <see cref="T:KonectSocket.KtpClient"/> connection.
+            </summary>
+        </member>
+        <member name="F:KonectSocket.KtpClient.ConnectionState.Disconnected">
+            <summary>
+            Indicates that the client is disconnected from the host.
+            </summary>
+        </member>
+        <member name="F:KonectSocket.KtpClient.ConnectionState.Connecting">
+            <summary>
+            Indicates that the client is connecting to the host.
+            </summary>
+        </member>
+        <member name="F:KonectSocket.KtpClient.ConnectionState.Connected">
+            <summary>
+            Indicates that the client is connected to the host.
+            </summary>
+        </member>
+        <member name="E:KonectSocket.KtpClient.Connected">
+            <summary>
+            Occurs when the KtpClient connects or disconnects from the Host.
+            </summary>
+        </member>
+        <member name="T:KonectSocket.KtpClient.ConnectedEventHandler">
+            <summary>
+            
+            </summary>
+            <param name="ktpClient"></param>
+            <param name="connectedEventArgs"></param>
+        </member>
+        <member name="T:KonectSocket.KtpClient.KtpException">
+            <summary>
+            An Exception that is thrown when an error occurs while working with KtpClient.
+            </summary>
+        </member>
+        <member name="P:KonectSocket.KtpClient.KtpException.Status">
+            <summary>
+            Represents the type of exception Thrown
+            </summary>
+        </member>
+        <member name="M:KonectSocket.KtpClient.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the <see cref="T:KonectSocket.KtpClient"/>.
+            </summary>
+        </member>
+        <member name="M:KonectSocket.KtpClient.Dispose">
+            <summary>
+            Releases all resources used by the <see cref="T:KonectSocket.KtpClient"/>.
+            </summary>
+        </member>
+    </members>
+</doc>

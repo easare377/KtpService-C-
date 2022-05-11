@@ -1,0 +1,10 @@
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KonectSocket\bin\Debug\netcoreapp3.1\KonectSocket.deps.json
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KonectSocket\bin\Debug\netcoreapp3.1\KonectSocket.dll
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KonectSocket\obj\Debug\netcoreapp3.1\KonectSocket.AssemblyInfoInputs.cache
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KonectSocket\obj\Debug\netcoreapp3.1\KonectSocket.AssemblyInfo.cs
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KonectSocket\bin\Debug\netcoreapp3.1\KonectSocket.pdb
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KonectSocket\obj\Debug\netcoreapp3.1\KonectSocket.csproj.CoreCompileInputs.cache
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KonectSocket\obj\Debug\netcoreapp3.1\KonectSocket.dll
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KonectSocket\obj\Debug\netcoreapp3.1\KonectSocket.pdb
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KonectSocket\bin\Debug\netcoreapp3.1\KonectSocket.xml
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KonectSocket\obj\Debug\netcoreapp3.1\KonectSocket.csproj.AssemblyReference.cache

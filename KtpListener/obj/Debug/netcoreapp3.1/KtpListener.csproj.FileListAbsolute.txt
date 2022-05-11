@@ -1,0 +1,13 @@
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\bin\Debug\netcoreapp3.1\KtpListener.deps.json
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\bin\Debug\netcoreapp3.1\KtpListener.dll
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\obj\Debug\netcoreapp3.1\KtpListener.AssemblyInfoInputs.cache
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\obj\Debug\netcoreapp3.1\KtpListener.AssemblyInfo.cs
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\bin\Debug\netcoreapp3.1\KtpListener.pdb
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\bin\Debug\netcoreapp3.1\KonectSocket.dll
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\bin\Debug\netcoreapp3.1\KonectSocket.pdb
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\obj\Debug\netcoreapp3.1\KtpListener.csproj.CoreCompileInputs.cache
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\obj\Debug\netcoreapp3.1\KtpListener.csproj.CopyComplete
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\obj\Debug\netcoreapp3.1\KtpListener.dll
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\obj\Debug\netcoreapp3.1\KtpListener.pdb
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\bin\Debug\netcoreapp3.1\KonectSocket.xml
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\obj\Debug\netcoreapp3.1\KtpListener.csproj.AssemblyReference.cache

@@ -1,0 +1,4 @@
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\obj\Release\netcoreapp3.1\KtpListener.csprojAssemblyReference.cache
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\obj\Release\netcoreapp3.1\KtpListener.csproj.CoreCompileInputs.cache
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\obj\Release\netcoreapp3.1\KtpListener.AssemblyInfoInputs.cache
+C:\Users\Emmanuel\Documents\Visual Studio 2019\Projects\KonectSocket\KtpListener\obj\Release\netcoreapp3.1\KtpListener.AssemblyInfo.cs

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "K3MZAfONaErjmXAWVKwjFdfw5nXihMP6w7gNpWO7zTKowrB/LGCiyMYXD5NnwDKPH0gc0ZxGChPGu1XTgy5QhQ==",
+  "success": true,
+  "projectFilePath": "/Users/ernestopoku-kwarteng/Documents/Visual Studio/Projects/KonectSocket/KtpListener/KtpListener.csproj",
+  "expectedPackageFiles": [
+    "/Users/ernestopoku-kwarteng/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
